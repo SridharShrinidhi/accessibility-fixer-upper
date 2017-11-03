@@ -2,6 +2,25 @@ html {
   font-family: Merriweather, serif;
 }
 
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: #000;
+  color: #fff;
+  padding: .5em .75em;
+  font-weight: bold;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 .color-brand {
   color: #568c36;
 }
@@ -12,7 +31,6 @@ html {
 
 a {
   color: #568c36;
-  text-decoration: none;
 }
 
 a:hover {
@@ -42,6 +60,11 @@ a:hover {
 
   color: #fff;
   text-decoration: none;
+}
+
+.nav a:focus {
+  background-color: #fff;
+  color: #113c00;
 }
 
 .nav a:hover {
